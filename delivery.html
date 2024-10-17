@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcel Delivery Form</title>
+    <link rel="stylesheet" href="delivery.css">
+    
+</head>
+<body>
+
+<h2 id="title">Parcel Delivery Form</h2>
+<form action="/submit-delivery" method="POST">
+    <label for="senderName">Sender's Name:</label>
+    <input type="text" id="senderName" name="senderName" required>
+
+    <label for="senderAddress">Sender's Address:</label>
+    <textarea id="senderAddress" name="senderAddress" required></textarea>
+
+    <label for="recipientName">Recipient's Name:</label>
+    <input type="text" id="recipientName" name="recipientName" required>
+
+    <label for="recipientAddress">Recipient's Address:</label>
+    <textarea id="recipientAddress" name="recipientAddress" required></textarea>
+
+    <label for="packageDetails">Package Details:</label>
+    <textarea id="packageDetails" name="packageDetails" required></textarea>
+
+    <label for="deliveryDate">Preferred Delivery Date:</label>
+    <input type="date" id="deliveryDate" name="deliveryDate" required>
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+/* Resetting the css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Setting a solid modern background */
+#empLogin {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #3498db, #9b59b6); /* Gradient from blue to purple */
+}
+
+/* Centering content */
+.container5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem;
+    background-color: rgba(255, 255, 255, 0.95); /* White background with transparency */
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Styling the user information text */
+#info {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Styling the input fields */
+#info input {
+    font-size: 1.3rem;
+    text-align: center;
+    width: 25rem;
+    height: 2.5rem;
+    border-radius: 0.8rem;
+    border: 2px solid #ddd;
+    margin: 1rem 0;
+    transition: border 0.3s;
+}
+
+#info input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Styling the login button */
+#login {
+    width: 7rem;
+    height: 3rem;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    background-color: #84a4ea; /* Modern green */
+    color: white;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#login:hover {
+    background-color: #a3d8ef;
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling the forget password link */
+#forpass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-top: 1.2rem;
+    color: #2980b9;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+#forpass:hover {
+    color: #1abc9c;
+}

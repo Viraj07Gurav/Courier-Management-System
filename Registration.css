@@ -1,0 +1,94 @@
+/* Resetting the CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Simplifies layout management */
+}
+
+/* Setting a solid modern background for the page */
+#Register {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6a82fb, #fc5c7d); /* Gradient background */
+}
+
+/* Centering content */
+.container4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.5rem; /* Font size */
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background with transparency */
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 2rem; /* Adjusted padding */
+    width: 60%; /* Width */
+    max-width: 500px; /* Set a max width for larger screens */
+    height: 95%; /* Adjusted height */
+    font-family: 'Roboto', sans-serif; /* Modern font */
+}
+
+/* Styling gender input */
+#gender {
+    width: 10rem; /* Width remains the same */
+    height: 2.3rem; /* Slightly smaller height */
+    font-size: 1.3rem; /* Reduced font size */
+    border-radius: 0.5rem; /* Rounded corners */
+}
+
+/* Styling user info input box */
+#info input {
+    width: 26rem; /* Slightly smaller width */
+    height: 2.5rem; /* Slightly smaller height */
+    text-align: center;
+    font-size: 1.4rem; /* Reduced font size */
+    border-radius: 0.9rem;
+    border: 2px solid #ccc; /* Light border */
+    transition: border-color 0.3s; /* Smooth transition for focus effect */
+}
+
+#info input:focus {
+    border-color: #6a82fb; /* Change border color on focus */
+}
+
+/* Removing the arrow from input type number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+/* Styling the register button */
+#regbtn {
+    width: 6rem; /* Slightly smaller width */
+    height: 2.8rem; /* Slightly smaller height */
+    margin-top: 1.5rem; /* Adjusted margin */
+    font-size: 1.2rem; /* Reduced font size */
+    background-color: #3498db; /* Modern blue color */
+    border-radius: 0.5rem;
+    color: white;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition effects */
+}
+
+#regbtn:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.05); /* Slightly less scale on hover */
+    box-shadow: 0.25rem 0.25rem rgba(255, 99, 71, 0.5); /* Slightly less intense shadow */
+    font-weight: bold;
+}
+
+/* Styling for the "Forget Password" section */
+#forpass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem; /* Smaller font size */
+    margin-top: 1rem; /* Adjusted margin */
+    font-family: 'Roboto', sans-serif; /* Ensure the font is consistent */
+}

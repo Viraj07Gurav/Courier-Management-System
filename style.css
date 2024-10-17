@@ -1,0 +1,144 @@
+/* General reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%; /* Ensure full height for body and html */
+    width: 100%;  /* Ensure full width for body and html */
+}
+
+/* Basic layout for the whole body */
+#outer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;  /* Ensure outer container spans the full width */
+    min-height: 100vh;
+}
+
+/* Container for the header */
+#head {
+    border: 2px solid black;
+    padding: 1vh;  /* Adjust padding for header */
+    height: 10%;   /* Reduced height to 10% */
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85); /* Semi-transparent black */
+    display: flex;
+    flex-direction: column;  /* Corrected from 'col' to 'column' */
+}
+
+/* Container for the navigation inside the header */
+#navbar {
+    padding: 10px;
+}
+
+#nav {
+    display: flex;
+}
+
+/* Link styles */
+.links {
+    text-decoration: none;
+    color: yellow;
+    font-size: 2.5rem;  /* Corrected from 'font' to 'font-size' */
+}
+
+.links:hover {
+    background-color: white;
+    color: black;
+    padding: 0.5rem;
+    border-radius: 1.3rem;
+}
+
+/* List item styles */
+.items {
+    list-style: none;
+    font-size: 2.7rem;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+/* Main container below the header */
+#home {
+    border: 2px solid red;
+    padding: 10px;
+    margin-top: 20px;
+    height: calc(100vh - 10%); /* Adjust height based on header */
+    width: 100%;  /* Full width */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    background: url("HomeBacImg.jpg") no-repeat center center/cover; /* Background image */
+}
+
+/* Centered container inside #home */
+.container {
+    border: 2px solid black;
+    padding: 10px;
+    width: 40%; /* Width relative to parent */
+    text-align: center; 
+}
+
+/* Below container */
+#below {
+    border: 2px solid black;
+    width: 40%;
+    height: 8%; 
+    padding: 10px; 
+    text-align: center;
+    margin-top: 0; /* Removed gap between containers */
+}
+
+/* Styling for username and password inputs */
+#username, #password {
+    text-align: center;
+    font-size: 1.5rem;
+    width: 25rem;  /* Input field width */
+    height: 2.5rem; /* Input field height */
+}
+
+/* Styling user logo */
+#userlogo {
+    width: 15rem;
+}
+
+/* Credential labels */
+.credentials {
+    font-size: 2rem;
+}
+
+/* Styling the login button */
+#btn {
+    width: 10rem;
+    height: 2.8rem;
+    margin-top: 3rem;
+    font-size: 1.7rem;
+    border-radius: 0.7rem;
+    background-color: aquamarine;
+}
+
+#btn:hover {
+    background-color: rgb(84, 192, 84);
+    color: blue;
+    cursor: pointer;
+    transform: scale(1.1); /* Slightly reduced scale for hover */
+    box-shadow: 0.2rem 0.2rem red;
+}
+
+/* Styling for forget password link */
+#forpass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+/* Styling for new account link */
+#NewAcc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: 1rem;
+} 
